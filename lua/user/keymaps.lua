@@ -6,9 +6,9 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- remap space as leader key
-keymap("", "<Space>", "<Nop", opts)
+keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.mapleaderlocal = " "
+vim.g.maplocalleader = " "
 
 -- Modes
 --   normal_mode "n"
@@ -25,7 +25,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "leader<e>", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- resize with arrows
 keymap("n", "<C-Up>", ":resize +2<cr>", opts)
