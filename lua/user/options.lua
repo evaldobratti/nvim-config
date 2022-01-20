@@ -31,7 +31,7 @@ vim.opt.wrap = false
 vim.opt.scrolloff = 15
 vim.opt.sidescrolloff = 15
 vim.opt.guifont = "monospace:h17"
---vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 
 vim.opt.shortmess:append "c"
 
