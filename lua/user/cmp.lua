@@ -3,6 +3,8 @@ if not cmp_status_ok then
   return
 end
 
+local snip_status_ok, luasnip = pcall(require, "luasnip")
+
 -- ? ? ? ? ? ? some other good icons
 local kind_icons = {
   Text = "?",
@@ -34,6 +36,11 @@ local kind_icons = {
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
 cmp.setup {
+  snippet = {
+    expand = function(args) 
+      luasnip.lsp_expand(args.body)
+    end 
+  },
   mapping = {
     ["<C-k>"] = cmp.mapping.select_prev_item(),
 		["<C-j>"] = cmp.mapping.select_next_item(),
@@ -47,7 +54,7 @@ cmp.setup {
     },
     -- Accept currently selected item. If none selected, `select` first item.
     -- Set `select` to `false` to only confirm explicitly selected items.
-    ["<CR>"] = cmp.mapping.confirm { select = true },
+    ["<Tab>"] = cmp.mapping.confirm { select = true },
   },
   formatting = {
     fields = { "kind", "abbr", "menu" },
@@ -56,6 +63,7 @@ cmp.setup {
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        nvim_lsp = "[LSP]",
         buffer = "[Buffer]",
         path = "[Path]",
       })[entry.source.name]
@@ -63,6 +71,7 @@ cmp.setup {
     end,
   },
   sources = {
+    { name = "nvim_lsp" },
     { name = "buffer" },
     { name = "path" },
   },
