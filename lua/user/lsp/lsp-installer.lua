@@ -6,9 +6,9 @@ lsp_installer.on_server_ready(function(server)
 		capabilities = require("user.lsp.handlers").capabilities,
 	}
   
-  if server.name == "elixirls" then
-    opts.cmd = { "/Users/user/.local/share/nvim/lsp_servers/elixir/elixir-ls/language_server.sh" } 
-  end
+  --if server.name == "elixirls" then
+  --  opts.cmd = { "/Users/user/.local/share/nvim/lsp_servers/elixir/elixir-ls/language_server.sh" } 
+  --end
 
   server:setup(opts)
 end)
