@@ -36,6 +36,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<cr>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<cr>", opts)
 keymap("n", "<S-h>", ":bprevious<cr>", opts)
+keymap("n", "<S-q>", ":Bdelete<cr>", opts)
 
 -- Visual --
 -- stay in indent mode
@@ -65,3 +66,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- Telescope
 keymap("n", "<leader>p", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>P", "<cmd>Telescope live_grep<cr>", opts)
+
+-- vim test
+keymap("n", "<leader>t", "<cmd>TestNearest<cr>", opts)
+keymap("n", "<leader>T", "<cmd>TestFile<cr>", opts)
