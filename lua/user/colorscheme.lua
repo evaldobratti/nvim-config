@@ -1,6 +1,6 @@
-local colorscheme = "vscode"
+local colorscheme = "tokyonight"
 
-vim.g.vscode_style = "dark"
+--vim.g.vscode_style = "dark"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 

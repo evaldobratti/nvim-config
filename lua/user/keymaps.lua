@@ -10,6 +10,9 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+
+keymap("", "<F1>", "<Nop>", opts)
+
 -- Modes
 --   normal_mode "n"
 --   insert_mode "i"
@@ -25,7 +28,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
 
 -- resize with arrows
 keymap("n", "<C-Up>", ":resize +2<cr>", opts)
@@ -70,3 +74,7 @@ keymap("n", "<leader>P", "<cmd>Telescope live_grep<cr>", opts)
 -- vim test
 keymap("n", "<leader>t", "<cmd>TestNearest<cr>", opts)
 keymap("n", "<leader>T", "<cmd>TestFile<cr>", opts)
+
+
+keymap("n", "<leader>w", "<cmd>w<cr>", opts)
+
