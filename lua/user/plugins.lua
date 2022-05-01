@@ -45,6 +45,8 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+  use "numToStr/Comment.nvim"
+
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
@@ -78,6 +80,10 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
 
   use "lewis6991/gitsigns.nvim"
+
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+
+  use "ahmedkhalf/project.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

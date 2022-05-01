@@ -4,6 +4,8 @@ if not status_ok then
 end
 
 --telescope.load_extension('media_files')
+--
+telescope.load_extension("projects")
 
 local actions = require "telescope.actions"
 
