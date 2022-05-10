@@ -41,6 +41,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<cr>", opts)
 keymap("n", "<S-l>", ":bnext<cr>", opts)
 keymap("n", "<S-h>", ":bprevious<cr>", opts)
 keymap("n", "<S-q>", ":Bdelete<cr>", opts)
+keymap("n", "<S-w>", ":%bd|e#<cr>", opts)
 
 -- Visual --
 -- stay in indent mode
