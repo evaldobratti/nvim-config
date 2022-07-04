@@ -28,6 +28,9 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+keymap("n", "<S-j>", "3j", opts)
+keymap("n", "<S-k>", "3k", opts)
+
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>l", ":NvimTreeFindFile<cr>", opts)
 
@@ -41,7 +44,8 @@ keymap("n", "<C-Right>", ":vertical resize +2<cr>", opts)
 keymap("n", "<S-l>", ":bnext<cr>", opts)
 keymap("n", "<S-h>", ":bprevious<cr>", opts)
 keymap("n", "<S-q>", ":Bdelete<cr>", opts)
-keymap("n", "<S-w>", ":%bd|e#<cr>", opts)
+keymap("n", "<S-w>", ":q<cr>", opts)
+-- keymap("n", "<S-w>", ":%bd|e#<cr>", opts)
 
 -- Visual --
 -- stay in indent mode
@@ -74,9 +78,10 @@ keymap("n", "<leader>f", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>p", "<cmd>Telescope projects<cr>", opts)
 
 -- vim test
-keymap("n", "<leader>t", "<cmd>TestNearest<cr>", opts)
-keymap("n", "<leader>T", "<cmd>TestFile<cr>", opts)
+keymap("n", "t", "<cmd>TestNearest<cr>", opts)
+keymap("n", "T", "<cmd>TestFile<cr>", opts)
 
 
-keymap("n", "<leader>w", "<cmd>w<cr>", opts)
+keymap("n", "s", "<cmd>w<cr>", opts)
 
+keymap("n", "m", "<cmd>ReachOpen buffers<cr>", opts)

@@ -7,6 +7,8 @@ end
 --
 telescope.load_extension("projects")
 
+
+local builtin = require "telescope.builtin"
 local actions = require "telescope.actions"
 
 telescope.setup {
