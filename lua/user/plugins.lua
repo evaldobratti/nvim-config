@@ -91,6 +91,8 @@ return packer.startup(function(use)
 
   use 'toppair/reach.nvim'
 
+  use "lukas-reineke/lsp-format.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
