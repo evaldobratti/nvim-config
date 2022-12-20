@@ -53,21 +53,22 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/cmp-nvim-lsp"
 
-  use "L3MON4D3/LuaSnip" 
+  use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
 
   use 'lunarvim/colorschemes'
   use 'folke/tokyonight.nvim'
 
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer"
 
   use "Mofiqul/vscode.nvim"
 
   use "nvim-telescope/telescope.nvim"
 
   use {
-    "nvim-treesitter/nvim-treesitter", 
+    "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate"
   }
   use "p00f/nvim-ts-rainbow"
