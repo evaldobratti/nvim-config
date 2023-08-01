@@ -94,6 +94,9 @@ return packer.startup(function(use)
 
   use "lukas-reineke/lsp-format.nvim"
 
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'MunifTanjim/prettier.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

@@ -1,4 +1,4 @@
-local colorscheme = "tokyonight"
+local colorscheme = "tokyonight-night"
 
 --vim.g.vscode_style = "dark"
 

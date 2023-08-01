@@ -81,6 +81,7 @@ keymap("n", "<leader>p", "<cmd>Telescope projects<cr>", opts)
 keymap("n", "t", "<cmd>TestNearest<cr>", opts)
 keymap("n", "T", "<cmd>TestFile<cr>", opts)
 
+keymap("n", "f", "<cmd>Prettier<cr>", opts)
 
 keymap("n", "s", "<cmd>w<cr>", opts)
 
