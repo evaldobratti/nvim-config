@@ -38,3 +38,5 @@ vim.opt.shortmess:append "c"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions -=cro]]
+
+vim.g.skip_ts_context_commentstring_module = true

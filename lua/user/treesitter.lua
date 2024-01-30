@@ -1,3 +1,5 @@
+require('ts_context_commentstring').setup { }
+
 require'nvim-treesitter.configs'.setup {
 -- One of "all", "maintained" (parsers with maintainers), or a list of languages
   ensure_installed = "all",
@@ -25,11 +27,6 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
     extended_mode = true,
     max_file_lines = nil,
-
-  },
-  context_commentstring = {
-   enable = true,
-   enable_autocmd = false
   }
 }
 

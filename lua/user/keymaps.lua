@@ -83,6 +83,6 @@ keymap("n", "T", "<cmd>TestFile<cr>", opts)
 
 keymap("n", "f", "<cmd>Prettier<cr>", opts)
 
-keymap("n", "s", "<cmd>w<cr>", opts)
+keymap("n", "s", "<cmd>w!<cr>", opts)
 
 keymap("n", "m", "<cmd>ReachOpen buffers<cr>", opts)
